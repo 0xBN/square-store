@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  gap: .5rem;
+  border: 1px yellow solid;
+  padding: 2rem;
+  height:var(--product-square);
+  width:var(--product-square);
+}
+
+.productTitle {
+  font-weight: bold;
+}
+
+img {
+  width:150px;
+  margin:0;
+}
+
+.productPrice {
+
+}
+
+.quantity {
+
+  width: 20%;
+  display: flex;
+}
+
+.increment,
+.decrement {
+  width: 30px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.addToCartBtn {
+  cursor: pointer;
+  background-color: var(--button-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.addToCartBtn:hover {
+  animation: effect 0.4s infinite;
+  background-color: var(--button-hover-color);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+  text-align: center;
+}
+
+@keyframes effect {
+  0% {
+      transform: translateX(0px) rotate(0deg);
+  }
+
+  20% {
+      transform: translateX(-4px) rotate(-4deg);
+  }
+
+  40% {
+      transform: translateX(-2px) rotate(-2deg);
+  }
+
+  60% {
+      transform: translateX(4px) rotate(4deg);
+  }
+
+  80% {
+      transform: translateX(2px) rotate(2deg);
+  }
+
+  100% {
+      transform: translateX(0px) rotate(0deg);
+  }
+}
+
+
+.increment:hover,
+.decrement:hover {
+
+  background-color: white;
+  color: black;
+}
+
+input {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,13 @@
+.shopPage {
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.container  {
+  display: grid;
+  grid-template-columns: repeat(3,var(--product-square));
+  grid-template-rows: repeat(3,var(--product-square));
+  gap: 1rem;
+  margin-bottom: 100px;
+}
